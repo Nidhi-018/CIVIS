@@ -117,3 +117,11 @@ body.dark ::-webkit-scrollbar-thumb {
   border-radius: 12px;
   overflow: hidden;
 }
+
+/* Ping animation for critical/warning markers */
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

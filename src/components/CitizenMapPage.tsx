@@ -12,18 +12,18 @@ export function CitizenMapPage({ theme }: CitizenMapPageProps) {
 
   // Public infrastructure nodes - citizens can see all infrastructure
   const infrastructureNodes = [
-    { id: '1', type: 'streetlights' as const, status: 'operational' as const, lat: 25, lng: 30, name: 'Streetlight - Main St', details: 'Operating normally' },
-    { id: '2', type: 'streetlights' as const, status: 'warning' as const, lat: 35, lng: 45, name: 'Streetlight - Oak Ave', details: 'Low brightness detected' },
-    { id: '3', type: 'streetlights' as const, status: 'critical' as const, lat: 45, lng: 25, name: 'Streetlight - Park Rd', details: 'Not responding' },
-    { id: '4', type: 'traffic' as const, status: 'operational' as const, lat: 55, lng: 60, name: 'Traffic Signal - Downtown', details: 'All lights functioning' },
-    { id: '5', type: 'traffic' as const, status: 'maintenance' as const, lat: 65, lng: 35, name: 'Traffic Signal - 5th Ave', details: 'Scheduled maintenance' },
-    { id: '6', type: 'water' as const, status: 'operational' as const, lat: 40, lng: 70, name: 'Water Pump - Station A', details: 'Normal pressure' },
-    { id: '7', type: 'water' as const, status: 'warning' as const, lat: 30, lng: 55, name: 'Water Valve - Zone 3', details: 'Pressure fluctuation' },
-    { id: '8', type: 'waste' as const, status: 'operational' as const, lat: 70, lng: 50, name: 'Waste Bin - Park', details: '45% full' },
-    { id: '9', type: 'waste' as const, status: 'critical' as const, lat: 20, lng: 65, name: 'Waste Bin - Market', details: '95% full - requires emptying' },
-    { id: '10', type: 'streetlights' as const, status: 'operational' as const, lat: 50, lng: 40, name: 'Streetlight - River St', details: 'Operating normally' },
-    { id: '11', type: 'traffic' as const, status: 'warning' as const, lat: 60, lng: 20, name: 'Traffic Signal - West End', details: 'Timer sync issue' },
-    { id: '12', type: 'water' as const, status: 'operational' as const, lat: 75, lng: 65, name: 'Water Tank - North', details: 'Level: 78%' },
+    { id: '1', type: 'streetlights' as const, status: 'operational' as const, latitude: 40.7128, longitude: -74.0060, name: 'Streetlight - Main St', details: 'Operating normally' },
+    { id: '2', type: 'streetlights' as const, status: 'warning' as const, latitude: 40.7589, longitude: -73.9851, name: 'Streetlight - Oak Ave', details: 'Low brightness detected' },
+    { id: '3', type: 'streetlights' as const, status: 'critical' as const, latitude: 40.7505, longitude: -73.9934, name: 'Streetlight - Park Rd', details: 'Not responding' },
+    { id: '4', type: 'traffic' as const, status: 'operational' as const, latitude: 40.7282, longitude: -73.7949, name: 'Traffic Signal - Downtown', details: 'All lights functioning' },
+    { id: '5', type: 'traffic' as const, status: 'maintenance' as const, latitude: 40.7831, longitude: -73.9712, name: 'Traffic Signal - 5th Ave', details: 'Scheduled maintenance' },
+    { id: '6', type: 'water' as const, status: 'operational' as const, latitude: 40.6892, longitude: -74.0445, name: 'Water Pump - Station A', details: 'Normal pressure' },
+    { id: '7', type: 'water' as const, status: 'warning' as const, latitude: 40.7308, longitude: -73.9973, name: 'Water Valve - Zone 3', details: 'Pressure fluctuation' },
+    { id: '8', type: 'waste' as const, status: 'operational' as const, latitude: 40.7829, longitude: -73.9654, name: 'Waste Bin - Park', details: '45% full' },
+    { id: '9', type: 'waste' as const, status: 'critical' as const, latitude: 40.6501, longitude: -73.9496, name: 'Waste Bin - Market', details: '95% full - requires emptying' },
+    { id: '10', type: 'streetlights' as const, status: 'operational' as const, latitude: 40.7580, longitude: -73.9855, name: 'Streetlight - River St', details: 'Operating normally' },
+    { id: '11', type: 'traffic' as const, status: 'warning' as const, latitude: 40.7831, longitude: -73.9712, name: 'Traffic Signal - West End', details: 'Timer sync issue' },
+    { id: '12', type: 'water' as const, status: 'operational' as const, latitude: 40.7505, longitude: -73.9934, name: 'Water Tank - North', details: 'Level: 78%' },
   ];
 
   // Filter nodes based on selections
