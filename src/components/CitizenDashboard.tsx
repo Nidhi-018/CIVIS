@@ -34,14 +34,14 @@ export function CitizenDashboard({ theme, onNavigate }: CitizenDashboardProps) {
   
   // Simplified infrastructure nodes - only showing public health status
   const publicNodes = [
-    { id: '1', type: 'streetlights' as const, status: 'operational' as const, lat: 25, lng: 30, name: 'Streetlight - Main St', details: 'Working' },
-    { id: '2', type: 'streetlights' as const, status: 'warning' as const, lat: 35, lng: 45, name: 'Streetlight - Oak Ave', details: 'Reported issue' },
-    { id: '3', type: 'streetlights' as const, status: 'critical' as const, lat: 45, lng: 25, name: 'Streetlight - Park Rd', details: 'Not working' },
-    { id: '4', type: 'traffic' as const, status: 'operational' as const, lat: 55, lng: 60, name: 'Traffic Signal', details: 'Working' },
-    { id: '6', type: 'water' as const, status: 'operational' as const, lat: 40, lng: 70, name: 'Water System', details: 'Normal' },
-    { id: '7', type: 'water' as const, status: 'warning' as const, lat: 30, lng: 55, name: 'Water System', details: 'Under maintenance' },
-    { id: '8', type: 'waste' as const, status: 'operational' as const, lat: 70, lng: 50, name: 'Waste Bin', details: 'Available' },
-    { id: '9', type: 'waste' as const, status: 'critical' as const, lat: 20, lng: 65, name: 'Waste Bin', details: 'Full' },
+    { id: '1', type: 'streetlights' as const, status: 'operational' as const, latitude: 40.7128, longitude: -74.0060, name: 'Streetlight - Main St', details: 'Working' },
+    { id: '2', type: 'streetlights' as const, status: 'warning' as const, latitude: 40.7589, longitude: -73.9851, name: 'Streetlight - Oak Ave', details: 'Reported issue' },
+    { id: '3', type: 'streetlights' as const, status: 'critical' as const, latitude: 40.7505, longitude: -73.9934, name: 'Streetlight - Park Rd', details: 'Not working' },
+    { id: '4', type: 'traffic' as const, status: 'operational' as const, latitude: 40.7282, longitude: -73.7949, name: 'Traffic Signal', details: 'Working' },
+    { id: '6', type: 'water' as const, status: 'operational' as const, latitude: 40.6892, longitude: -74.0445, name: 'Water System', details: 'Normal' },
+    { id: '7', type: 'water' as const, status: 'warning' as const, latitude: 40.7308, longitude: -73.9973, name: 'Water System', details: 'Under maintenance' },
+    { id: '8', type: 'waste' as const, status: 'operational' as const, latitude: 40.7829, longitude: -73.9654, name: 'Waste Bin', details: 'Available' },
+    { id: '9', type: 'waste' as const, status: 'critical' as const, latitude: 40.6501, longitude: -73.9496, name: 'Waste Bin', details: 'Full' },
   ];
 
   // User's complaints
@@ -199,8 +199,8 @@ export function CitizenDashboard({ theme, onNavigate }: CitizenDashboardProps) {
           </div>
 
           {/* Map Preview */}
-          <div 
-            className="lg:col-span-2 cursor-pointer group relative"
+          <div
+            className="lg:col-span-2 cursor-pointer group relative h-[300px]"
             onClick={() => onNavigate?.('map')}
           >
             <MapView theme={theme} nodes={publicNodes} height="300px" />
